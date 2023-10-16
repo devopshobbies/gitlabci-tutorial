@@ -8,4 +8,4 @@ services:
     environment:
       DEBUG: $DEBUG
     ports:
-      - 8000:8000
+      - 8001:8000
