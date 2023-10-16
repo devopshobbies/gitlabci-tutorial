@@ -12,8 +12,8 @@ merge requests:
   stage: merge requests
   rules:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-    script:
-      - echo "Only on merge requests ..."
+  script:
+    - echo "Only on merge requests ..."
 
 build:
   stage: build
