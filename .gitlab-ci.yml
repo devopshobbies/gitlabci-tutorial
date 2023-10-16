@@ -26,6 +26,8 @@ deploy dev:
   stage: deploy
   environment:
     name: dev
+  tags:
+    - dev
   script:
     - docker-compose pull
     - docker-compose down
@@ -36,6 +38,8 @@ deploy prod:
   when: manual
   environment:
     name: prod
+  tags:
+    - prod
   script:
     - docker-compose pull
     - docker-compose down
