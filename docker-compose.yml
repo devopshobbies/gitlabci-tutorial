@@ -5,5 +5,7 @@ services:
     image: "${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_NAME}"
     build:
       context: .
+    environment:
+      DEBUG: $DEBUG
     ports:
       - 8000:8000
