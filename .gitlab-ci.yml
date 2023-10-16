@@ -22,8 +22,19 @@ push:
   script:
     - docker push "$CI_REGISTRY_IMAGE":"$CI_COMMIT_REF_NAME"
 
-deploy:
+deploy dev:
   stage: deploy
+  environment:
+    name: dev
+  script:
+    - docker-compose pull
+    - docker-compose down
+    - docker-compose up -d
+
+deploy prod:
+  stage: deploy
+  environment:
+    name: prod
   script:
     - docker-compose pull
     - docker-compose down
