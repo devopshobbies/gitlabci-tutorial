@@ -76,8 +76,8 @@ Before you begin, ensure you have the following prerequisites installed on your 
 - `app/` - Django app directory (you can have multiple apps).
 - `manage.py` - Django management script.
 - `requirements.txt` - List of Python dependencies.
-- `docker-compoe.yml` - Run the project on Docker container platform.
-- `Dockerfile` - Build the project using Docker.
+- `docker-compoe.yml` - Run the project using the Docker container platform.
+- `Dockerfile` - Build the project using the Docker container platform.
 - `gitlab-ci.yml` - CI/CD file using GitlabCI.
 - `db.sqlite3` - Default database SQLite, but you can change it.
 
